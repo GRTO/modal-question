@@ -12,21 +12,25 @@ import { ModalStyles } from "./modal.theme";
 export const ModalWrapper: React.FC<{
   isShowing: boolean;
   hide: (event: React.MouseEvent) => void;
-  children: JSX.Element;
 }> = ({ isShowing, hide, children }) =>
   isShowing
     ? ReactDOM.createPortal(
         <>
+          {/**This is for the background color (Gray) */}
           <div css={ModalStyles.modalOverlay} />
+          {/**This section is for the modal itself */}
           <div css={ModalStyles.modalWrapper}>
+            {/**Modal Container */}
             <div css={ModalStyles.modal}>
+              {/**Modal header */}
               <div css={ModalStyles.modalHeader}>
                 <div>Modal Header</div>
                 <div css={ModalStyles.modalCloseButton} onClick={hide}>
                   <span aria-hidden="true">&times;</span>
                 </div>
               </div>
-              {children}
+              {/**Modal Content */}
+              <div css={ModalStyles.modalContent}>{children}</div>
             </div>
           </div>
         </>,
