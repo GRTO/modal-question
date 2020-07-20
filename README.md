@@ -37,5 +37,5 @@ _Note:_ The hook returns the modal we want to show, the showModal (Open modal) f
 I created some PRs to show how I worked in real life in this small example. Adding some PRs with description and creating some branches.
 
 
-> _"Hope you can learn with this project about how work with hooks, HOC, react-spring, emotion js and flex-box."_ - GRTO
+> _"Hope you can learn with this project about how to work with hooks, HOC, react-spring, emotion js and flex-box."_ - GRTO
 
