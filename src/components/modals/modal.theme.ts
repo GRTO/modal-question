@@ -12,23 +12,18 @@ export const ModalStyles = {
     opacity: 0.5;
   `,
   modalWrapper: css`
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1050;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
-    outline: 0;
+    display: flex;
+    justify-content: center;
   `,
   modal: css`
-    z-index: 100;
+    z-index: 1050;
+    display: flex;
+    flex-direction: column;
     background: white;
     position: relative;
-    margin: 1.75rem auto;
     border-radius: 3px;
     max-width: 500px;
+    max-height: 70vh;
     padding: 2rem;
   `,
   modalHeader: css`
@@ -37,6 +32,9 @@ export const ModalStyles = {
     margin: 0 0 0.5rem 0;
     padding: 0 0 0.25rem 0;
     border-bottom: 0.05rem solid rgb(211, 211, 211);
+  `,
+  modalContent: css`
+    overflow-y: auto;
   `,
   modalCloseButton: css`
     font-size: 1.4rem;
